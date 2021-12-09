@@ -3,13 +3,13 @@ name: "any build test folder 01 use"
 on:
   push:
     branches: [ develop ]
-#    paths:
-#      - 'folder01/**'
+    paths:
+      - 'folder01/**'
 
   pull_request:
     branches: [ develop ]
-#    path:
-#      - 'folder01/**'
+    path:
+      - 'folder01/**'
 
 jobs:
   build:
