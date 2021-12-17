@@ -24,10 +24,11 @@ jobs:
           dotnet-version: '3.1.301'
           include-prerelease: true
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
       - name: path check
         run: pwd
+
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
