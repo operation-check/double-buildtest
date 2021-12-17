@@ -4,12 +4,12 @@ on:
   push:
     branches: [ develop ]
     paths:
-      - 'folder01/**'
+      - 'team01/**'
 
   pull_request:
     branches: [ develop ]
     path:
-      - 'folder01/**'
+      - 'team01/**'
 
 jobs:
   build:
