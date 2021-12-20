@@ -391,7 +391,7 @@ FodyWeavers.xsd
 .idea/
 *.sln.iml
 
-/folder03/*
+/folder03
 !/folder04/*
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
