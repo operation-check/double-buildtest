@@ -2,14 +2,14 @@ name: "any build test folder 01 use"
 
 on:
   push:
-    branches: [ develop ]
-    paths:
-      - 'team01/**'
+    branches: [ feature ]
+#    paths:
+#      - 'team01/**'
 
   pull_request:
-    branches: [ develop ]
-    path:
-      - 'team01/**'
+    branches: [ feature ]
+#    path:
+#      - 'team01/**'
 
 jobs:
   build:
