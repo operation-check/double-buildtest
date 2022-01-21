@@ -27,10 +27,6 @@ jobs:
       - name: path check
         run: pwd
 
-
-      - name: path check
-        run: pwd
-
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
