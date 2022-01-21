@@ -2,14 +2,14 @@ name: "any build test folder 01 use"
 
 on:
   push:
-    branches: [ develop ]
-    paths:
-      - 'team01/**'
+    branches: [ feature ]
+#    paths:
+#      - 'team01/**'
 
   pull_request:
-    branches: [ develop ]
-    path:
-      - 'team01/**'
+    branches: [ feature ]
+#    path:
+#      - 'team01/**'
 
 jobs:
   build:
@@ -23,10 +23,12 @@ jobs:
         with:
           dotnet-version: '3.1.301'
           include-prerelease: true
+         
+      - name: path check
+        run: pwd
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
-        echo pwd
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
